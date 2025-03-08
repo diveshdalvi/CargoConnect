@@ -1,23 +1,30 @@
-const express = require("express");
-const { findRoutes } = require("../utils/routeUtils.js");
+import express from "express";
+import { getClosestLocations } from "../utils/util.js"; // Import the function from routeUtils.js
 
 const router = express.Router();
 
-// POST API to find routes
-router.post("/find", async (req, res) => {
-  const { originType, originName, destinationType, destinationName } = req.body;
+// POST API to find closest locations
+router.post("/getClosestLocations", async (req, res) => {
+  const { source_type, source_name, destination_type, destination_name } = req.body;
+
+  // Validate that all required fields are provided
+  if (!source_type || !source_name || !destination_type || !destination_name) {
+    return res.status(400).json({
+      error: "Missing required fields: source_type, source_name, destination_type, destination_name",
+    });
+  }
 
   try {
-    const response = await findRoutes(
-      originType,
-      originName,
-      destinationType,
-      destinationName
+    const result = await getClosestLocations(
+      source_type,
+      source_name,
+      destination_type,
+      destination_name
     );
-    res.status(200).json(response);
+    res.status(200).json(result);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(500).json({ error: error.message });
   }
 });
 
-module.exports = router;
+export default router;
