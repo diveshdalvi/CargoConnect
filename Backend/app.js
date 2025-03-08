@@ -25,10 +25,10 @@ mongoose.connection.once("open", async () => {
   console.log("✅ MongoDB connection is now open");
 });
 
-// neo4jDriver
-//   .verifyConnectivity()
-//   .then(() => console.log("✅ Neo4j connected"))
-//   .catch((err) => console.error("❌ Neo4j connection error:", err));
+neo4jDriver
+  .verifyConnectivity()
+  .then(() => console.log("✅ Neo4j connected"))
+  .catch((err) => console.error("❌ Neo4j connection error:", err));
 
 // Middleware
 app.use(cors()); // Enable CORS for all routes

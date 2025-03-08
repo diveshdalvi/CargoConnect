@@ -1,0 +1,1203 @@
+[
+    {
+      "id": 1,
+      "city": "Lima",
+      "country_name": "Peru",
+      "country_iso2": "PE",
+      "latitude": -12.0464,
+      "longitude": -77.0428,
+      "location": {
+        "type": "Point",
+        "coordinates": [-77.0428, -12.0464]
+      }
+    },
+    {
+      "id": 2,
+      "city": "Oaxaca",
+      "country_name": "Mexico",
+      "country_iso2": "MX",
+      "latitude": 17.0747,
+      "longitude": -96.7212,
+      "location": {
+        "type": "Point",
+        "coordinates": [-96.7212, 17.0747]
+      }
+    },
+    {
+      "id": 3,
+      "city": "Bucaramanga",
+      "country_name": "Colombia",
+      "country_iso2": "CO",
+      "latitude": 7.1195,
+      "longitude": -73.1198,
+      "location": {
+        "type": "Point",
+        "coordinates": [-73.1198, 7.1195]
+      }
+    },
+    {
+      "id": 4,
+      "city": "Cuenca",
+      "country_name": "Ecuador",
+      "country_iso2": "EC",
+      "latitude": -2.9007,
+      "longitude": -79.0048,
+      "location": {
+        "type": "Point",
+        "coordinates": [-79.0048, -2.9007]
+      }
+    },
+    {
+      "id": 5,
+      "city": "Lagos",
+      "country_name": "Nigeria",
+      "country_iso2": "NG",
+      "latitude": 6.5244,
+      "longitude": 3.3792,
+      "location": {
+        "type": "Point",
+        "coordinates": [3.3792, 6.5244]
+      }
+    },
+    {
+      "id": 6,
+      "city": "Chongqing",
+      "country_name": "China",
+      "country_iso2": "CN",
+      "latitude": 29.5630,
+      "longitude": 106.5516,
+      "location": {
+        "type": "Point",
+        "coordinates": [106.5516, 29.5630]
+      }
+    },
+    {
+      "id": 7,
+      "city": "Vijayawada",
+      "country_name": "India",
+      "country_iso2": "IN",
+      "latitude": 16.5063,
+      "longitude": 80.6480,
+      "location": {
+        "type": "Point",
+        "coordinates": [80.6480, 16.5063]
+      }
+    },
+    {
+      "id": 8,
+      "city": "Guayaquil",
+      "country_name": "Ecuador",
+      "country_iso2": "EC",
+      "latitude": -2.1896,
+      "longitude": -79.8895,
+      "location": {
+        "type": "Point",
+        "coordinates": [-79.8895, -2.1896]
+      }
+    },
+    {
+      "id": 9,
+      "city": "Antofagasta",
+      "country_name": "Chile",
+      "country_iso2": "CL",
+      "latitude": -23.6507,
+      "longitude": -70.3975,
+      "location": {
+        "type": "Point",
+        "coordinates": [-70.3975, -23.6507]
+      }
+    },
+    {
+      "id": 10,
+      "city": "Cochabamba",
+      "country_name": "Bolivia",
+      "country_iso2": "BO",
+      "latitude": -17.3901,
+      "longitude": -66.1659,
+      "location": {
+        "type": "Point",
+        "coordinates": [-66.1659, -17.3901]
+      }
+    },
+    {
+      "id": 11,
+      "city": "Port Harcourt",
+      "country_name": "Nigeria",
+      "country_iso2": "NG",
+      "latitude": 4.8156,
+      "longitude": 7.0493,
+      "location": {
+        "type": "Point",
+        "coordinates": [7.0493, 4.8156]
+      }
+    },
+    {
+      "id": 12,
+      "city": "Dresden",
+      "country_name": "Germany",
+      "country_iso2": "DE",
+      "latitude": 51.0504,
+      "longitude": 13.7372,
+      "location": {
+        "type": "Point",
+        "coordinates": [13.7372, 51.0504]
+      }
+    },
+    {
+      "id": 13,
+      "city": "Riverside",
+      "country_name": "United States",
+      "country_iso2": "US",
+      "latitude": 33.9806,
+      "longitude": -117.3755,
+      "location": {
+        "type": "Point",
+        "coordinates": [-117.3755, 33.9806]
+      }
+    },
+    {
+      "id": 14,
+      "city": "Bangalore",
+      "country_name": "India",
+      "country_iso2": "IN",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "location": {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716]
+      }
+    },
+    {
+      "id": 15,
+      "city": "Quito",
+      "country_name": "Ecuador",
+      "country_iso2": "EC",
+      "latitude": -0.1807,
+      "longitude": -78.4678,
+      "location": {
+        "type": "Point",
+        "coordinates": [-78.4678, -0.1807]
+      }
+    },
+    {
+      "id": 16,
+      "city": "Zaragoza",
+      "country_name": "Spain",
+      "country_iso2": "ES",
+      "latitude": 41.6488,
+      "longitude": -0.8891,
+      "location": {
+        "type": "Point",
+        "coordinates": [-0.8891, 41.6488]
+      }
+    },
+    {
+      "id": 17,
+      "city": "Skopje",
+      "country_name": "North Macedonia",
+      "country_iso2": "MK",
+      "latitude": 41.9981,
+      "longitude": 21.4254,
+      "location": {
+        "type": "Point",
+        "coordinates": [21.4254, 41.9981]
+      }
+    },
+    {
+      "id": 18,
+      "city": "Pune",
+      "country_name": "India",
+      "country_iso2": "IN",
+      "latitude": 18.5204,
+      "longitude": 73.8567,
+      "location": {
+        "type": "Point",
+        "coordinates": [73.8567, 18.5204]
+      }
+    },
+    {
+      "id": 19,
+      "city": "Bujumbura",
+      "country_name": "Burundi",
+      "country_iso2": "BI",
+      "latitude": -3.3792,
+      "longitude": 29.9182,
+      "location": {
+        "type": "Point",
+        "coordinates": [29.9182, -3.3792]
+      }
+    },
+    {
+      "id": 20,
+      "city": "Aden",
+      "country_name": "Yemen",
+      "country_iso2": "YE",
+      "latitude": 12.7792,
+      "longitude": 45.0371,
+      "location": {
+        "type": "Point",
+        "coordinates": [45.0371, 12.7792]
+      }
+    },
+    {
+      "id": 21,
+      "city": "Tucson",
+      "country_name": "United States",
+      "country_iso2": "US",
+      "latitude": 32.2226,
+      "longitude": -110.9747,
+      "location": {
+        "type": "Point",
+        "coordinates": [-110.9747, 32.2226]
+      }
+    },
+    {
+      "id": 22,
+      "city": "Almaty",
+      "country_name": "Kazakhstan",
+      "country_iso2": "KZ",
+      "latitude": 43.2220,
+      "longitude": 76.8512,
+      "location": {
+        "type": "Point",
+        "coordinates": [76.8512, 43.2220]
+      }
+    },
+    {
+      "id": 23,
+      "city": "Santiago de Chile",
+      "country_name": "Chile",
+      "country_iso2": "CL",
+      "latitude": -33.4489,
+      "longitude": -70.6693,
+      "location": {
+        "type": "Point",
+        "coordinates": [-70.6693, -33.4489]
+      }
+    },
+    {
+      "id": 24,
+      "city": "Valencia",
+      "country_name": "Venezuela",
+      "country_iso2": "VE",
+      "latitude": 10.1639,
+      "longitude": -68.1193,
+      "location": {
+        "type": "Point",
+        "coordinates": [-68.1193, 10.1639]
+      }
+    },
+    {
+      "id": 25,
+      "city": "Durban",
+      "country_name": "South Africa",
+      "country_iso2": "ZA",
+      "latitude": -29.8587,
+      "longitude": 31.0218,
+      "location": {
+        "type": "Point",
+        "coordinates": [31.0218, -29.8587]
+      }
+    },
+    {
+      "id": 26,
+      "city": "Fes",
+      "country_name": "Morocco",
+      "country_iso2": "MA",
+      "latitude": 34.0550,
+      "longitude": -4.9803,
+      "location": {
+        "type": "Point",
+        "coordinates": [-4.9803, 34.0550]
+      }
+    },
+    {
+      "id": 27,
+      "city": "Minsk",
+      "country_name": "Belarus",
+      "country_iso2": "BY",
+      "latitude": 53.9,
+      "longitude": 27.5667,
+      "location": {
+        "type": "Point",
+        "coordinates": [27.5667, 53.9]
+      }
+    },
+    {
+      "id": 28,
+      "city": "Riga",
+      "country_name": "Latvia",
+      "country_iso2": "LV",
+      "latitude": 56.9460,
+      "longitude": 24.1059,
+      "location": {
+        "type": "Point",
+        "coordinates": [24.1059, 56.9460]
+      }
+    },
+    {
+      "id": 29,
+      "city": "Sarajevo",
+      "country_name": "Bosnia and Herzegovina",
+      "country_iso2": "BA",
+      "latitude": 43.8486,
+      "longitude": 18.3564,
+      "location": {
+        "type": "Point",
+        "coordinates": [18.3564, 43.8486]
+      }
+    },
+    {
+      "id": 30,
+      "city": "Chisinau",
+      "country_name": "Moldova",
+      "country_iso2": "MD",
+      "latitude": 47.0105,
+      "longitude": 28.8638,
+      "location": {
+        "type": "Point",
+        "coordinates": [28.8638, 47.0105]
+      }
+    },
+    {
+      "id": 31,
+      "city": "Tbilisi",
+      "country_name": "Georgia",
+      "country_iso2": "GE",
+      "latitude": 41.7151,
+      "longitude": 44.8271,
+      "location": {
+        "type": "Point",
+        "coordinates": [44.8271, 41.7151]
+      }
+    },
+    {
+      "id": 32,
+      "city": "Bishkek",
+      "country_name": "Kyrgyzstan",
+      "country_iso2": "KG",
+      "latitude": 42.8746,
+      "longitude": 74.6121,
+      "location": {
+        "type": "Point",
+        "coordinates": [74.6121, 42.8746]
+      }
+    },
+    {
+      "id": 33,
+      "city": "Baku",
+      "country_name": "Azerbaijan",
+      "country_iso2": "AZ",
+      "latitude": 40.4093,
+      "longitude": 49.8671,
+      "location": {
+        "type": "Point",
+        "coordinates": [49.8671, 40.4093]
+      }
+    },
+    {
+      "id": 34,
+      "city": "Dushanbe",
+      "country_name": "Tajikistan",
+      "country_iso2": "TJ",
+      "latitude": 38.5598,
+      "longitude": 68.7870,
+      "location": {
+        "type": "Point",
+        "coordinates": [68.7870, 38.5598]
+      }
+    },
+    {
+      "id": 35,
+      "city": "Astana",
+      "country_name": "Kazakhstan",
+      "country_iso2": "KZ",
+      "latitude": 51.1694,
+      "longitude": 71.4491,
+      "location": {
+        "type": "Point",
+        "coordinates": [71.4491, 51.1694]
+      }
+    },
+    {
+      "id": 36,
+      "city": "Yerevan",
+      "country_name": "Armenia",
+      "country_iso2": "AM",
+      "latitude": 40.1792,
+      "longitude": 44.4991,
+      "location": {
+        "type": "Point",
+        "coordinates": [44.4991, 40.1792]
+      }
+    },
+    {
+      "id": 37,
+      "city": "Dhaka",
+      "country_name": "Bangladesh",
+      "country_iso2": "BD",
+      "latitude": 23.8103,
+      "longitude": 90.4125,
+      "location": {
+        "type": "Point",
+        "coordinates": [90.4125, 23.8103]
+      }
+    },
+    {
+      "id": 38,
+      "city": "Islamabad",
+      "country_name": "Pakistan",
+      "country_iso2": "PK",
+      "latitude": 33.6844,
+      "longitude": 73.0479,
+      "location": {
+        "type": "Point",
+        "coordinates": [73.0479, 33.6844]
+      }
+    },
+    {
+      "id": 39,
+      "city": "Montevideo",
+      "country_name": "Uruguay",
+      "country_iso2": "UY",
+      "latitude": -34.9011,
+      "longitude": -56.1645,
+      "location": {
+        "type": "Point",
+        "coordinates": [-56.1645, -34.9011]
+      }
+    },
+    {
+      "id": 40,
+      "city": "Cali",
+      "country_name": "Colombia",
+      "country_iso2": "CO",
+      "latitude": 3.4516,
+      "longitude": -76.5320,
+      "location": {
+        "type": "Point",
+        "coordinates": [-76.5320, 3.4516]
+      }
+    },
+    {
+      "id": 41,
+      "city": "Las Palmas de Gran Canaria",
+      "country_name": "Spain",
+      "country_iso2": "ES",
+      "latitude": 28.1235,
+      "longitude": -15.4363,
+      "location": {
+        "type": "Point",
+        "coordinates": [-15.4363, 28.1235]
+      }
+    },
+    {
+      "id": 42,
+      "city": "Malabo",
+      "country_name": "Equatorial Guinea",
+      "country_iso2": "GQ",
+      "latitude": 3.75,
+      "longitude": 8.7833,
+      "location": {
+        "type": "Point",
+        "coordinates": [8.7833, 3.75]
+      }
+    },
+    {
+      "id": 43,
+      "city": "Lusaka",
+      "country_name": "Zambia",
+      "country_iso2": "ZM",
+      "latitude": -15.3875,
+      "longitude": 28.3228,
+      "location": {
+        "type": "Point",
+        "coordinates": [28.3228, -15.3875]
+      }
+    },
+    {
+      "id": 44,
+      "city": "Helsinki",
+      "country_name": "Finland",
+      "country_iso2": "FI",
+      "latitude": 60.1699,
+      "longitude": 24.9384,
+      "location": {
+        "type": "Point",
+        "coordinates": [24.9384, 60.1699]
+      }
+    },
+    {
+      "id": 45,
+      "city": "Vilnius",
+      "country_name": "Lithuania",
+      "country_iso2": "LT",
+      "latitude": 54.6892,
+      "longitude": 25.2798,
+      "location": {
+        "type": "Point",
+        "coordinates": [25.2798, 54.6892]
+      }
+    },
+    {
+      "id": 46,
+      "city": "Kigali",
+      "country_name": "Rwanda",
+      "country_iso2": "RW",
+      "latitude": -1.9441,
+      "longitude": 30.0619,
+      "location": {
+        "type": "Point",
+        "coordinates": [30.0619, -1.9441]
+      }
+    },
+    {
+      "id": 47,
+      "city": "Chennai",
+      "country_name": "India",
+      "country_iso2": "IN",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "location": {
+        "type": "Point",
+        "coordinates": [80.2707, 13.0827]
+      }
+    },
+    {
+      "id": 48,
+      "city": "Beirut",
+      "country_name": "Lebanon",
+      "country_iso2": "LB",
+      "latitude": 33.8886,
+      "longitude": 35.4955,
+      "location": {
+        "type": "Point",
+        "coordinates": [35.4955, 33.8886]
+      }
+    },
+    {
+      "id": 49,
+      "city": "Ljubljana",
+      "country_name": "Slovenia",
+      "country_iso2": "SI",
+      "latitude": 46.0511,
+      "longitude": 14.5051,
+      "location": {
+        "type": "Point",
+        "coordinates": [14.5051, 46.0511]
+      }
+    },
+    {
+      "id": 50,
+      "city": "Catania",
+      "country_name": "Italy",
+      "country_iso2": "IT",
+      "latitude": 37.5079,
+      "longitude": 15.0830,
+      "location": {
+        "type": "Point",
+        "coordinates": [15.0830, 37.5079]
+      }
+    },
+    {
+      "id": 51,
+      "city": "Tunis",
+      "country_name": "Tunisia",
+      "country_iso2": "TN",
+      "latitude": 36.8065,
+      "longitude": 10.1815,
+      "location": {
+        "type": "Point",
+        "coordinates": [10.1815, 36.8065]
+      }
+    },
+    {
+      "id": 52,
+      "city": "Tashkent",
+      "country_name": "Uzbekistan",
+      "country_iso2": "UZ",
+      "latitude": 41.2995,
+      "longitude": 69.2401,
+      "location": {
+        "type": "Point",
+        "coordinates": [69.2401, 41.2995]
+      }
+    },
+    {
+      "id": 53,
+      "city": "Jeddah",
+      "country_name": "Saudi Arabia",
+      "country_iso2": "SA",
+      "latitude": 21.4858,
+      "longitude": 39.1925,
+      "location": {
+        "type": "Point",
+        "coordinates": [39.1925, 21.4858]
+      }
+    },
+    {
+      "id": 54,
+      "city": "Amman",
+      "country_name": "Jordan",
+      "country_iso2": "JO",
+      "latitude": 31.9454,
+      "longitude": 35.9284,
+      "location": {
+        "type": "Point",
+        "coordinates": [35.9284, 31.9454]
+      }
+    },
+    {
+      "id": 55,
+      "city": "Banjul",
+      "country_name": "Gambia",
+      "country_iso2": "GM",
+      "latitude": 13.4549,
+      "longitude": -16.5790,
+      "location": {
+        "type": "Point",
+        "coordinates": [-16.5790, 13.4549]
+      }
+    },
+    {
+      "id": 56,
+      "city": "Algiers",
+      "country_name": "Algeria",
+      "country_iso2": "DZ",
+      "latitude": 36.7528,
+      "longitude": 3.0420,
+      "location": {
+        "type": "Point",
+        "coordinates": [3.0420, 36.7528]
+      }
+    },
+    {
+      "id": 57,
+      "city": "Juba",
+      "country_name": "South Sudan",
+      "country_iso2": "SS",
+      "latitude": 4.8594,
+      "longitude": 31.5713,
+      "location": {
+        "type": "Point",
+        "coordinates": [31.5713, 4.8594]
+      }
+    },
+    {
+      "id": 58,
+      "city": "Bujumbura",
+      "country_name": "Burundi",
+      "country_iso2": "BI",
+      "latitude": -3.3792,
+      "longitude": 29.9182,
+      "location": {
+        "type": "Point",
+        "coordinates": [29.9182, -3.3792]
+      }
+    },
+    {
+      "id": 59,
+      "city": "Mogadishu",
+      "country_name": "Somalia",
+      "country_iso2": "SO",
+      "latitude": 2.0392,
+      "longitude": 45.3458,
+      "location": {
+        "type": "Point",
+        "coordinates": [45.3458, 2.0392]
+      }
+    },
+    {
+      "id": 60,
+      "city": "Kinshasa",
+      "country_name": "Democratic Republic of the Congo",
+      "country_iso2": "CD",
+      "latitude": -4.4419,
+      "longitude": 15.2663,
+      "location": {
+        "type": "Point",
+        "coordinates": [15.2663, -4.4419]
+      }
+    },
+    {
+      "id": 61,
+      "city": "Baku",
+      "country_name": "Azerbaijan",
+      "country_iso2": "AZ",
+      "latitude": 40.4093,
+      "longitude": 49.8671,
+      "location": {
+        "type": "Point",
+        "coordinates": [49.8671, 40.4093]
+      }
+    },
+    {
+      "id": 62,
+      "city": "Kigali",
+      "country_name": "Rwanda",
+      "country_iso2": "RW",
+      "latitude": -1.9441,
+      "longitude": 30.0619,
+      "location": {
+        "type": "Point",
+        "coordinates": [30.0619, -1.9441]
+      }
+    },
+    {
+      "id": 63,
+      "city": "Cotonou",
+      "country_name": "Benin",
+      "country_iso2": "BJ",
+      "latitude": 6.3706,
+      "longitude": 2.4296,
+      "location": {
+        "type": "Point",
+        "coordinates": [2.4296, 6.3706]
+      }
+    },
+    {
+      "id": 64,
+      "city": "Lilongwe",
+      "country_name": "Malawi",
+      "country_iso2": "MW",
+      "latitude": -13.9876,
+      "longitude": 33.7741,
+      "location": {
+        "type": "Point",
+        "coordinates": [33.7741, -13.9876]
+      }
+    },
+    {
+      "id": 65,
+      "city": "Blantyre",
+      "country_name": "Malawi",
+      "country_iso2": "MW",
+      "latitude": -15.7801,
+      "longitude": 35.0092,
+      "location": {
+        "type": "Point",
+        "coordinates": [35.0092, -15.7801]
+      }
+    },
+    {
+      "id": 66,
+      "city": "Maputo",
+      "country_name": "Mozambique",
+      "country_iso2": "MZ",
+      "latitude": -25.9654,
+      "longitude": 32.5892,
+      "location": {
+        "type": "Point",
+        "coordinates": [32.5892, -25.9654]
+      }
+    },
+    {
+      "id": 67,
+      "city": "Khartoum",
+      "country_name": "Sudan",
+      "country_iso2": "SD",
+      "latitude": 15.5007,
+      "longitude": 32.5599,
+      "location": {
+        "type": "Point",
+        "coordinates": [32.5599, 15.5007]
+      }
+    },
+    {
+      "id": 68,
+      "city": "Nouakchott",
+      "country_name": "Mauritania",
+      "country_iso2": "MR",
+      "latitude": 18.0780,
+      "longitude": -15.9780,
+      "location": {
+        "type": "Point",
+        "coordinates": [-15.9780, 18.0780]
+      }
+    },
+    {
+      "id": 69,
+      "city": "Brazzaville",
+      "country_name": "Republic of the Congo",
+      "country_iso2": "CG",
+      "latitude": -4.2634,
+      "longitude": 15.2429,
+      "location": {
+        "type": "Point",
+        "coordinates": [15.2429, -4.2634]
+      }
+    },
+    {
+      "id": 70,
+      "city": "Minsk",
+      "country_name": "Belarus",
+      "country_iso2": "BY",
+      "latitude": 53.9,
+      "longitude": 27.5667,
+      "location": {
+        "type": "Point",
+        "coordinates": [27.5667, 53.9]
+      }
+    },
+    {
+      "id": 71,
+      "city": "Lagos",
+      "country_name": "Nigeria",
+      "country_iso2": "NG",
+      "latitude": 6.5244,
+      "longitude": 3.3792,
+      "location": {
+        "type": "Point",
+        "coordinates": [3.3792, 6.5244]
+      }
+    },
+    {
+      "id": 72,
+      "city": "Antananarivo",
+      "country_name": "Madagascar",
+      "country_iso2": "MG",
+      "latitude": -18.8792,
+      "longitude": 47.5079,
+      "location": {
+        "type": "Point",
+        "coordinates": [47.5079, -18.8792]
+      }
+    },
+    {
+      "id": 73,
+      "city": "Addis Ababa",
+      "country_name": "Ethiopia",
+      "country_iso2": "ET",
+      "latitude": 9.145,
+      "longitude": 40.4897,
+      "location": {
+        "type": "Point",
+        "coordinates": [40.4897, 9.145]
+      }
+    },
+    {
+      "id": 74,
+      "city": "Lima",
+      "country_name": "Peru",
+      "country_iso2": "PE",
+      "latitude": -12.0464,
+      "longitude": -77.0428,
+      "location": {
+        "type": "Point",
+        "coordinates": [-77.0428, -12.0464]
+      }
+    },
+    {
+      "id": 75,
+      "city": "Bangalore",
+      "country_name": "India",
+      "country_iso2": "IN",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "location": {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716]
+      }
+    },
+    {
+      "id": 76,
+      "city": "Cairo",
+      "country_name": "Egypt",
+      "country_iso2": "EG",
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "location": {
+        "type": "Point",
+        "coordinates": [31.2357, 30.0444]
+      }
+    },
+    {
+      "id": 77,
+      "city": "Accra",
+      "country_name": "Ghana",
+      "country_iso2": "GH",
+      "latitude": 5.6037,
+      "longitude": -0.1870,
+      "location": {
+        "type": "Point",
+        "coordinates": [-0.1870, 5.6037]
+      }
+    },
+    {
+      "id": 78,
+      "city": "Kampala",
+      "country_name": "Uganda",
+      "country_iso2": "UG",
+      "latitude": 0.3136,
+      "longitude": 32.5811,
+      "location": {
+        "type": "Point",
+        "coordinates": [32.5811, 0.3136]
+      }
+    },
+    {
+      "id": 79,
+      "city": "Khartoum",
+      "country_name": "Sudan",
+      "country_iso2": "SD",
+      "latitude": 15.5007,
+      "longitude": 32.5599,
+      "location": {
+        "type": "Point",
+        "coordinates": [32.5599, 15.5007]
+      }
+    },
+    {
+      "id": 80,
+      "city": "Luanda",
+      "country_name": "Angola",
+      "country_iso2": "AO",
+      "latitude": -8.8390,
+      "longitude": 13.2894,
+      "location": {
+        "type": "Point",
+        "coordinates": [13.2894, -8.8390]
+      }
+    },
+    {
+      "id": 81,
+      "city": "Libreville",
+      "country_name": "Gabon",
+      "country_iso2": "GA",
+      "latitude": 0.4167,
+      "longitude": 9.4672,
+      "location": {
+        "type": "Point",
+        "coordinates": [9.4672, 0.4167]
+      }
+    },
+    {
+      "id": 82,
+      "city": "Cotonou",
+      "country_name": "Benin",
+      "country_iso2": "BJ",
+      "latitude": 6.3706,
+      "longitude": 2.4296,
+      "location": {
+        "type": "Point",
+        "coordinates": [2.4296, 6.3706]
+      }
+    },
+    {
+      "id": 83,
+      "city": "Kigali",
+      "country_name": "Rwanda",
+      "country_iso2": "RW",
+      "latitude": -1.9441,
+      "longitude": 30.0619,
+      "location": {
+        "type": "Point",
+        "coordinates": [30.0619, -1.9441]
+      }
+    },
+    {
+      "id": 84,
+      "city": "Mombasa",
+      "country_name": "Kenya",
+      "country_iso2": "KE",
+      "latitude": -4.0435,
+      "longitude": 39.6682,
+      "location": {
+        "type": "Point",
+        "coordinates": [39.6682, -4.0435]
+      }
+    },
+    {
+      "id": 85,
+      "city": "Harare",
+      "country_name": "Zimbabwe",
+      "country_iso2": "ZW",
+      "latitude": -17.8292,
+      "longitude": 31.0522,
+      "location": {
+        "type": "Point",
+        "coordinates": [31.0522, -17.8292]
+      }
+    },
+    {
+      "id": 86,
+      "city": "Windhoek",
+      "country_name": "Namibia",
+      "country_iso2": "NA",
+      "latitude": -22.5597,
+      "longitude": 17.0832,
+      "location": {
+        "type": "Point",
+        "coordinates": [17.0832, -22.5597]
+      }
+    },
+    {
+      "id": 87,
+      "city": "Douala",
+      "country_name": "Cameroon",
+      "country_iso2": "CM",
+      "latitude": 4.0511,
+      "longitude": 9.7675,
+      "location": {
+        "type": "Point",
+        "coordinates": [9.7675, 4.0511]
+      }
+    },
+    {
+      "id": 88,
+      "city": "Port Harcourt",
+      "country_name": "Nigeria",
+      "country_iso2": "NG",
+      "latitude": 4.8146,
+      "longitude": 7.0235,
+      "location": {
+        "type": "Point",
+        "coordinates": [7.0235, 4.8146]
+      }
+    },
+    {
+      "id": 89,
+      "city": "Lagos",
+      "country_name": "Nigeria",
+      "country_iso2": "NG",
+      "latitude": 6.5244,
+      "longitude": 3.3792,
+      "location": {
+        "type": "Point",
+        "coordinates": [3.3792, 6.5244]
+      }
+    },
+    {
+      "id": 90,
+      "city": "Tbilisi",
+      "country_name": "Georgia",
+      "country_iso2": "GE",
+      "latitude": 41.7151,
+      "longitude": 44.8271,
+      "location": {
+        "type": "Point",
+        "coordinates": [44.8271, 41.7151]
+      }
+    },
+    {
+      "id": 91,
+      "city": "Zagreb",
+      "country_name": "Croatia",
+      "country_iso2": "HR",
+      "latitude": 45.1,
+      "longitude": 15.2,
+      "location": {
+        "type": "Point",
+        "coordinates": [15.2, 45.1]
+      }
+    },
+    {
+      "id": 92,
+      "city": "Tallinn",
+      "country_name": "Estonia",
+      "country_iso2": "EE",
+      "latitude": 59.4370,
+      "longitude": 24.7535,
+      "location": {
+        "type": "Point",
+        "coordinates": [24.7535, 59.4370]
+      }
+    },
+    {
+      "id": 93,
+      "city": "Sarajevo",
+      "country_name": "Bosnia and Herzegovina",
+      "country_iso2": "BA",
+      "latitude": 43.8486,
+      "longitude": 18.3564,
+      "location": {
+        "type": "Point",
+        "coordinates": [18.3564, 43.8486]
+      }
+    },
+    {
+      "id": 94,
+      "city": "Podgorica",
+      "country_name": "Montenegro",
+      "country_iso2": "ME",
+      "latitude": 42.4411,
+      "longitude": 19.2636,
+      "location": {
+        "type": "Point",
+        "coordinates": [19.2636, 42.4411]
+      }
+    },
+    {
+      "id": 95,
+      "city": "Cali",
+      "country_name": "Colombia",
+      "country_iso2": "CO",
+      "latitude": 3.4516,
+      "longitude": -76.5320,
+      "location": {
+        "type": "Point",
+        "coordinates": [-76.5320, 3.4516]
+      }
+    },
+    {
+      "id": 96,
+      "city": "Chisinau",
+      "country_name": "Moldova",
+      "country_iso2": "MD",
+      "latitude": 47.0105,
+      "longitude": 28.8638,
+      "location": {
+        "type": "Point",
+        "coordinates": [28.8638, 47.0105]
+      }
+    },
+    {
+      "id": 97,
+      "city": "Porto",
+      "country_name": "Portugal",
+      "country_iso2": "PT",
+      "latitude": 41.1579,
+      "longitude": -8.6291,
+      "location": {
+        "type": "Point",
+        "coordinates": [-8.6291, 41.1579]
+      }
+    },
+    {
+      "id": 98,
+      "city": "Saransk",
+      "country_name": "Russia",
+      "country_iso2": "RU",
+      "latitude": 54.1895,
+      "longitude": 45.1797,
+      "location": {
+        "type": "Point",
+        "coordinates": [45.1797, 54.1895]
+      }
+    },
+    {
+      "id": 99,
+      "city": "Helsinki",
+      "country_name": "Finland",
+      "country_iso2": "FI",
+      "latitude": 60.1699,
+      "longitude": 24.9384,
+      "location": {
+        "type": "Point",
+        "coordinates": [24.9384, 60.1699]
+      }
+    },
+    {
+      "id": 100,
+      "city": "Beirut",
+      "country_name": "Lebanon",
+      "country_iso2": "LB",
+      "latitude": 33.8886,
+      "longitude": 35.4955,
+      "location": {
+        "type": "Point",
+        "coordinates": [35.4955, 33.8886]
+      }
+    }
+  ]
+  
