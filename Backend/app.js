@@ -2,7 +2,10 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { neo4jDriver } = require("./config/database");
-const route = require("./routes/pathRoute");
+const pathRoute = require("./routes/pathRoute");
+const locationRoutes = require("./routes/locationRoutes");
+const freightRoutes = require("./routes/freightRoutes");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,14 +31,28 @@ mongoose.connection.once("open", async () => {
 //   .catch((err) => console.error("❌ Neo4j connection error:", err));
 
 // Middleware
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 
+// Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: "Internal server error" });
 });
 
-app.use("/api/routes", route);
+// API Routes
+app.use("/api/routes", pathRoute);
+app.use("/api/locations", locationRoutes);
+app.use("/api/freight", freightRoutes);
+
+// Root route for API health check
+app.get("/", (req, res) => {
+  res.json({
+    status: "OK",
+    message: "CargoConnect API is running",
+    version: "1.0.0",
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
