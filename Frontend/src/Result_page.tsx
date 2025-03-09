@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Plane, Package, DollarSign, Shield, Info, CheckCircle, Ship, Truck, Train, Box } from 'lucide-react';
+import { Plane, Info, CheckCircle, Ship, Truck, Train} from 'lucide-react';
 import Logo from './Public/Assets/delivery.png';
+import axios from 'axios';
+
+
 const ResultPage = () => {
-  const [activeStep, setActiveStep] = useState(1);
-  const [portCharges, setPortCharges] = useState({
-    origin: true,
-    destination: true
-  });
-  const [insurance, setInsurance] = useState(true);
-  const [customsBrokerage, setCustomsBrokerage] = useState({
-    needed: true,
-    knownShipper: false
-  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  
 
   const [transitType, setTransitType] = useState('air');
   const [transitTypeDestination, setTransitTypeDestination] = useState('air');
@@ -27,9 +23,9 @@ const ResultPage = () => {
   });
   const [currency, setCurrency] = useState('USD');
   const [amount, setAmount] = useState('100');
-  const [routePreference, setRoutePreference] = useState('fastest'); // New state for route preference
+  const [routePreference, setRoutePreference] = useState('fastest');
 
-  const steps = ['Search', 'Recommended Services', 'Results', 'Booking', 'Verification'];
+
 
   const transitOptions = [
     { id: 'air', label: 'Air Freight', Icon: Plane },
@@ -86,22 +82,7 @@ const ResultPage = () => {
   const TransitIcon = currentTransitOption.Icon;
   const currentCurrency = currencies.find(c => c.code === currency) || currencies[0];
 
-  const formatDimensions = () => {
-    const { length, width, height, weight, units } = dimensions;
-    if (!length && !width && !height && !weight) return '1 Unit • Total: 0.13 cbm, 10 kg';
-    
-    const dims = [];
-    if (length || width || height) {
-      const l = length || '0';
-      const w = width || '0';
-      const h = height || '0';
-      dims.push(`${l}x${w}x${h} ${units === 'metric' ? 'cm' : 'in'}`);
-    }
-    if (weight) {
-      dims.push(`${weight} ${units === 'metric' ? 'kg' : 'lbs'}`);
-    }
-    return dims.join(', ') || '1 Unit • Total: 0.13 cbm, 10 kg';
-  };
+
 
   return (
     <div className="min-h-screen bg-[#232323] from-slate-800 to-slate-900 text-white pt-24  max-w-auto w-a flex items-center flex-col justify-center gap-6">
@@ -165,8 +146,10 @@ const ResultPage = () => {
                               </option>
                             ))}
                           </select>
-                          <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                            <TransitIcon className="w-5 h-5 text-blue-400" />
+                          <div className="relative">
+                            <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                              <TransitIcon className="w-5 h-5 text-blue-400" />
+                            </div>
                           </div>
                         </div>
             
@@ -328,13 +311,54 @@ const ResultPage = () => {
             
                     {/* Confirm Button */}
                     <motion.button
+                      onClick={async () => {
+                        try {
+                          setLoading(true);
+                          setError('');
+                          
+                          // Log form data
+                          console.log('Form Data:', {
+                            transitType,
+                            transitTypeDestination,
+                            origin,
+                            destination,
+                            dimensions,
+                            currency,
+                            amount,
+                            routePreference
+                          });
+
+                          // Call backend API
+                          const response = await axios.post('http://localhost:3000/api/freight/calculate', {
+                            distance: 1000, // This should be calculated based on coordinates
+                            weight: parseFloat(dimensions.weight),
+                            transportationMode: transitType,
+                            priority: routePreference,
+                            hasDangerousGoods: false,
+                            isRefrigerated: false,
+                            isOversized: false
+                          });
+
+                          // Log response
+                          console.log('Route Calculation Result:', response.data);
+                        } catch (err) {
+                          console.error('Error calculating route:', err);
+                          setError('Failed to calculate route');
+                        } finally {
+                          setLoading(false);
+                        }
+                      }}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="w-max  bg-blue-500 flex px-4 content-between hover:bg-blue-600 text-white py-3 rounded-lg font-semibold  justify-center gap-2 shadow-lg transition-colors duration-300"
+                      disabled={loading}
+                      className={`w-max bg-blue-500 flex px-4 content-between hover:bg-blue-600 text-white py-3 rounded-lg font-semibold justify-center gap-2 shadow-lg transition-colors duration-300 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
                     >
                       <CheckCircle className="w-5 h-5" />
-                      Confirm Services & Get Results
+                      {loading ? 'Calculating...' : 'Confirm Services & Get Results'}
                     </motion.button>
+                    {error && (
+                      <div className="text-red-500 mt-2 text-center">{error}</div>
+                    )}
                   </div>
               
               );

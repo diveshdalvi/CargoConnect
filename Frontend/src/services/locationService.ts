@@ -1,94 +1,57 @@
-import api from "./api";
+import axios from 'axios';
 
-// Types for location entities
+const API_BASE_URL = 'http://localhost:3000/api';
+
 export interface Location {
   _id: string;
   port_name: string;
+  port_code: string;
   city: string;
   country_name: string;
+  type: string;
   latitude: number;
   longitude: number;
 }
 
-export interface Airport extends Location {
-  port_code: string;
-  type: string;
-}
+export const fetchLocations = async (transportType: string): Promise<Location[]> => {
+  try {
+    let endpoint = '';
+    switch (transportType) {
+      case 'sea':
+        endpoint = '/locations/ports';
+        break;
+      case 'air':
+        endpoint = '/locations/airports';
+        break;
+      case 'land':
+        endpoint = '/locations/cities';
+        break;
+      default:
+        throw new Error('Invalid transport type');
+    }
 
-export interface City extends Location {
-  population?: number;
-}
-
-export interface Port extends Location {
-  port_code: string;
-  harbor_size?: string;
-}
-
-// Location services
-const locationService = {
-  /**
-   * Get all airports
-   */
-  getAllAirports: async () => {
-    const response = await api.get("/locations/airports");
+    const response = await axios.get(`${API_BASE_URL}${endpoint}`);
     return response.data;
-  },
-
-  /**
-   * Get airport by ID
-   */
-  getAirportById: async (id: string) => {
-    const response = await api.get(`/locations/airports/${id}`);
-    return response.data;
-  },
-
-  /**
-   * Search airports by name, code, or city
-   */
-  searchAirports: async (query: string) => {
-    const response = await api.get(`/locations/airports/search/${query}`);
-    return response.data;
-  },
-
-  /**
-   * Get all cities
-   */
-  getAllCities: async () => {
-    const response = await api.get("/locations/cities");
-    return response.data;
-  },
-
-  /**
-   * Get city by ID
-   */
-  getCityById: async (id: string) => {
-    const response = await api.get(`/locations/cities/${id}`);
-    return response.data;
-  },
-
-  /**
-   * Search cities by name or country
-   */
-  searchCities: async (query: string) => {
-    const response = await api.get(`/locations/cities/search/${query}`);
-    return response.data;
-  },
-
-  /**
-   * Get all ports
-   */
-  getAllPorts: async () => {
-    const response = await api.get("/locations/ports");
-    return response.data;
-  },
-
-  /**
-   * Search ports by name, code, or city
-   */
-  searchPorts: async (query: string) => {
-    const response = await api.get(`/locations/ports/search/${query}`);
-    return response.data;
-  },
+  } catch (error) {
+    console.error('Error fetching locations:', error);
+    throw error;
+  }
 };
 
-export default locationService;
+export const submitRoute = async (routeData: {
+  originType: string;
+  originId: string;
+  destinationType: string;
+  destinationId: string;
+  routeType: string;
+  weight: number;
+  weightUnit: string;
+}) => {
+  try {
+    const response = await axios.post(`${API_BASE_URL}/routes/calculate`, routeData);
+    return response.data;
+  } catch (error) {
+    console.error('Error submitting route:', error);
+    throw error;
+  }
+};
