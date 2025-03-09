@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
-// Assuming you have a locations array
-const locations = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Miami'];
+import { fetchLocations, submitRoute } from '../services/locationService';
 
 const fadeIn = {
   hidden: { opacity: 0 },
@@ -10,15 +8,72 @@ const fadeIn = {
 };
 
 const FreightCalculator = () => {
-  const [transportType, setTransportType] = useState('');
-  const [destinationTransportType, setDestinationTransportType] = useState('');
+  const [originType, setOriginType] = useState('');
+  const [destinationType, setDestinationType] = useState('');
+  const [originLocations, setOriginLocations] = useState([]);
+  const [destinationLocations, setDestinationLocations] = useState([]);
+  const [selectedOrigin, setSelectedOrigin] = useState('');
+  const [selectedDestination, setSelectedDestination] = useState('');
   const [routeType, setRouteType] = useState('fastest');
   const [weight, setWeight] = useState('');
   const [weightUnit, setWeightUnit] = useState('kg');
-  const [inView, setInView] = useState(true); // This should be connected to the actual in-view logic
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [inView, setInView] = useState(true);
 
-  const handleWeightChange = (value) => {
-    setWeight(value);
+  useEffect(() => {
+    if (originType) {
+      fetchLocationsByType(originType, setOriginLocations);
+    }
+  }, [originType]);
+
+  useEffect(() => {
+    if (destinationType) {
+      fetchLocationsByType(destinationType, setDestinationLocations);
+    }
+  }, [destinationType]);
+
+  const fetchLocationsByType = async (type, setLocations) => {
+    try {
+      setLoading(true);
+      setError('');
+      const data = await fetchLocations(type);
+      setLocations(data);
+    } catch (err) {
+      setError('Error fetching locations');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!originType || !destinationType || !selectedOrigin || !selectedDestination || !weight) {
+      setError('Please fill in all required fields');
+      return;
+    }
+
+    try {
+      setLoading(true);
+      setError('');
+      const response = await submitRoute({
+        originType,
+        originId: selectedOrigin,
+        destinationType,
+        destinationId: selectedDestination,
+        routeType,
+        weight: parseFloat(weight),
+        weightUnit
+      });
+      // Handle successful response
+      console.log('Route calculated:', response);
+    } catch (err) {
+      setError('Error calculating route');
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const toggleWeightUnit = () => {
@@ -35,93 +90,109 @@ const FreightCalculator = () => {
       >
         <h2 className="text-3xl font-bold text-center mb-4">Freight Calculator</h2>
 
-        <div className="bg-transparent p-4 rounded-2xl shadow-2xl flex items-center gap-4">
-          {/* Transport Type Select for Origin */}
+        <form onSubmit={handleSubmit} className="bg-transparent p-4 rounded-2xl shadow-2xl flex items-center gap-4">
+          {/* Origin Transport Type */}
           <select
-            className="flex-shrink-0 bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg w-40"
-            onChange={(e) => setTransportType(e.target.value)}
+            className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-40"
+            value={originType}
+            onChange={(e) => setOriginType(e.target.value)}
+            required
           >
-            <option value="">Transport Type</option>
+            <option value="">Origin Type</option>
             <option value="sea">Sea</option>
             <option value="air">Air</option>
             <option value="land">Land</option>
           </select>
 
-          {/* Origin Select */}
+          {/* Origin Location */}
           <select
-            className="flex-shrink-0 bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg w-40"
+            className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-40"
+            value={selectedOrigin}
+            onChange={(e) => setSelectedOrigin(e.target.value)}
+            required
+            disabled={!originType}
           >
             <option value="">Select Origin</option>
-            {locations.map((location) => (
-              <option key={location} value={location}>
-                {location}
+            {originLocations.map((location) => (
+              <option key={location._id} value={location._id}>
+                {location.port_name || location.city}
               </option>
             ))}
           </select>
 
-          {/* Transport Type Select for Destination */}
+          {/* Destination Transport Type */}
           <select
-            className="flex-shrink-0 bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg w-40"
-            onChange={(e) => setDestinationTransportType(e.target.value)}
+            className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-40"
+            value={destinationType}
+            onChange={(e) => setDestinationType(e.target.value)}
+            required
           >
-            <option value="">Transport Type</option>
+            <option value="">Destination Type</option>
             <option value="sea">Sea</option>
             <option value="air">Air</option>
             <option value="land">Land</option>
           </select>
 
-          {/* Destination Select */}
+          {/* Destination Location */}
           <select
-            className="flex-shrink-0 bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg w-40"
+            className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-40"
+            value={selectedDestination}
+            onChange={(e) => setSelectedDestination(e.target.value)}
+            required
+            disabled={!destinationType}
           >
             <option value="">Select Destination</option>
-            {locations.map((location) => (
-              <option key={location} value={location}>
-                {location}
+            {destinationLocations.map((location) => (
+              <option key={location._id} value={location._id}>
+                {location.port_name || location.city}
               </option>
             ))}
           </select>
 
-          {/* Route Type Select */}
+          {/* Route Type */}
           <select
             value={routeType}
             onChange={(e) => setRouteType(e.target.value)}
-            className="flex-shrink-0 bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg w-40"
+            className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-40"
+            required
           >
             <option value="fastest">Fastest Route</option>
             <option value="cheapest">Cheapest Route</option>
             <option value="shortest">Shortest Route</option>
           </select>
 
-          {/* Weight Input with KG Toggle */}
-          <div className="flex items-center flex-shrink-0 relative">
+          {/* Weight Input */}
+          <div className="flex items-center gap-2">
             <input
               type="number"
               value={weight}
-              onChange={(e) => handleWeightChange(e.target.value)}
-              placeholder={`Weight (${weightUnit})`}
-              className="w-full bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 pr-16 focus:outline-none focus:border-blue-500 hover:border-blue-500 transition-colors text-lg [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+              onChange={(e) => setWeight(e.target.value)}
+              placeholder="Weight"
+              className="bg-[#333333] border border-blue-500/20 rounded-lg px-3 py-2 w-32"
+              required
             />
-            {/* KG Toggle Button */}
-            <motion.button
+            <button
+              type="button"
               onClick={toggleWeightUnit}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="absolute right-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300"
+              className="bg-blue-500 text-white px-3 py-2 rounded-lg"
             >
-              {weightUnit.toUpperCase()}
-            </motion.button>
+              {weightUnit}
+            </button>
           </div>
 
-          {/* ➝ Arrow Button */}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 text-lg"
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="bg-blue-500 text-white px-6 py-2 rounded-lg disabled:opacity-50"
+            disabled={loading}
           >
-            ➝
-          </motion.button>
-        </div>
+            {loading ? 'Calculating...' : 'Calculate'}
+          </button>
+        </form>
+
+        {error && (
+          <div className="text-red-500 text-center mt-4">{error}</div>
+        )}
       </motion.div>
     </div>
   );
