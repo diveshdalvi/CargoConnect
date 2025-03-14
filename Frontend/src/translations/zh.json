@@ -1,0 +1,65 @@
+{
+  "common": {
+    "getStarted": "开始使用",
+    "trackShipment": "追踪货物",
+    "becauseEveryMile": "因为每一英里",
+    "counts": "都很重要",
+    "trackYourCargo": "通过以下方式追踪您的全球货物",
+    "realTimeUpdates": "实时更新和高效路线优化"
+  },
+  "freightCalculator": {
+    "title": "运费计算器",
+    "originType": "起始类型",
+    "selectOrigin": "选择起点",
+    "destinationType": "目的地类型",
+    "selectDestination": "选择目的地",
+    "routeType": "路线类型",
+    "fastest": "最快路线",
+    "cheapest": "最经济路线",
+    "shortest": "最短路线",
+    "weight": "重量",
+    "calculate": "计算",
+    "calculating": "计算中...",
+    "error": "路线计算错误",
+    "fillAllFields": "请填写所有必填字段"
+  },
+  "features": {
+    "title": "功能特点",
+    "routeOptimization": {
+      "title": "路线优化",
+      "description": "智能规划以减少时间和成本"
+    },
+    "multiModal": {
+      "title": "多式联运物流",
+      "description": "支持公路、铁路、空运和海运货物"
+    },
+    "carbonFootprint": {
+      "title": "碳足迹追踪",
+      "description": "追踪并减少排放，创造更环保的未来"
+    },
+    "multilingual": {
+      "title": "多语言支持",
+      "description": "多语言无缝全球体验"
+    }
+  },
+  "footer": {
+    "description": "您值得信赖的全球物流和货物运输合作伙伴",
+    "contactUs": "联系我们",
+    "email": "contact@cargoconnect.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Logistics Ave, NY 10001",
+    "quickLinks": "快速链接",
+    "aboutUs": "关于我们",
+    "services": "服务",
+    "contact": "联系"
+  },
+  "transportTypes": {
+    "sea": "海运",
+    "air": "空运",
+    "land": "陆运",
+    "seaFreight": "海运货物",
+    "airFreight": "空运货物",
+    "roadFreight": "公路运输",
+    "railFreight": "铁路运输"
+  }
+}

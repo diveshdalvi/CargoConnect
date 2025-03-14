@@ -1,0 +1,65 @@
+{
+  "common": {
+    "getStarted": "Commencer",
+    "trackShipment": "Suivre l'Expédition",
+    "becauseEveryMile": "Parce que chaque kilomètre",
+    "counts": "compte",
+    "trackYourCargo": "Suivez votre cargaison à travers le monde avec",
+    "realTimeUpdates": "mises à jour en temps réel et optimisation efficace des itinéraires"
+  },
+  "freightCalculator": {
+    "title": "Calculateur de Fret",
+    "originType": "Type d'Origine",
+    "selectOrigin": "Sélectionner l'Origine",
+    "destinationType": "Type de Destination",
+    "selectDestination": "Sélectionner la Destination",
+    "routeType": "Type d'Itinéraire",
+    "fastest": "Itinéraire le Plus Rapide",
+    "cheapest": "Itinéraire le Moins Cher",
+    "shortest": "Itinéraire le Plus Court",
+    "weight": "Poids",
+    "calculate": "Calculer",
+    "calculating": "Calcul en cours...",
+    "error": "Erreur lors du calcul de l'itinéraire",
+    "fillAllFields": "Veuillez remplir tous les champs requis"
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "routeOptimization": {
+      "title": "Optimisation d'Itinéraire",
+      "description": "Planification intelligente pour réduire le temps et les coûts"
+    },
+    "multiModal": {
+      "title": "Logistique Multimodale",
+      "description": "Prend en charge le fret routier, ferroviaire, aérien et maritime"
+    },
+    "carbonFootprint": {
+      "title": "Suivi de l'Empreinte Carbone",
+      "description": "Suivez et réduisez les émissions pour un avenir plus vert"
+    },
+    "multilingual": {
+      "title": "Support Multilingue",
+      "description": "Expérience mondiale fluide en plusieurs langues"
+    }
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance en logistique mondiale et transport de marchandises",
+    "contactUs": "Contactez-nous",
+    "email": "contact@cargoconnect.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Logistics Ave, NY 10001",
+    "quickLinks": "Liens Rapides",
+    "aboutUs": "À Propos",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "transportTypes": {
+    "sea": "Mer",
+    "air": "Air",
+    "land": "Terre",
+    "seaFreight": "Fret Maritime",
+    "airFreight": "Fret Aérien",
+    "roadFreight": "Fret Routier",
+    "railFreight": "Fret Ferroviaire"
+  }
+}

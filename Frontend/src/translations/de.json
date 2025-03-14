@@ -1,0 +1,65 @@
+{
+  "common": {
+    "getStarted": "Loslegen",
+    "trackShipment": "Sendung verfolgen",
+    "becauseEveryMile": "Weil jeder Kilometer",
+    "counts": "zählt",
+    "trackYourCargo": "Verfolgen Sie Ihre Fracht weltweit mit",
+    "realTimeUpdates": "Echtzeit-Updates und effizienter Routenoptimierung"
+  },
+  "freightCalculator": {
+    "title": "Frachtkostenrechner",
+    "originType": "Ursprungsart",
+    "selectOrigin": "Ursprung auswählen",
+    "destinationType": "Zielart",
+    "selectDestination": "Ziel auswählen",
+    "routeType": "Routentyp",
+    "fastest": "Schnellste Route",
+    "cheapest": "Günstigste Route",
+    "shortest": "Kürzeste Route",
+    "weight": "Gewicht",
+    "calculate": "Berechnen",
+    "calculating": "Berechnung läuft...",
+    "error": "Fehler bei der Routenberechnung",
+    "fillAllFields": "Bitte füllen Sie alle erforderlichen Felder aus"
+  },
+  "features": {
+    "title": "Funktionen",
+    "routeOptimization": {
+      "title": "Routenoptimierung",
+      "description": "Intelligente Planung zur Zeit- und Kostenreduzierung"
+    },
+    "multiModal": {
+      "title": "Multimodale Logistik",
+      "description": "Unterstützt Straßen-, Schienen-, Luft- und Seefracht"
+    },
+    "carbonFootprint": {
+      "title": "CO2-Fußabdruck-Tracking",
+      "description": "Verfolgen und reduzieren Sie Emissionen für eine grünere Zukunft"
+    },
+    "multilingual": {
+      "title": "Mehrsprachiger Support",
+      "description": "Nahtlose globale Erfahrung in mehreren Sprachen"
+    }
+  },
+  "footer": {
+    "description": "Ihr vertrauenswürdiger Partner in globaler Logistik und Frachttransport",
+    "contactUs": "Kontaktieren Sie uns",
+    "email": "contact@cargoconnect.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Logistics Ave, NY 10001",
+    "quickLinks": "Schnellzugriff",
+    "aboutUs": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
+  },
+  "transportTypes": {
+    "sea": "See",
+    "air": "Luft",
+    "land": "Land",
+    "seaFreight": "Seefracht",
+    "airFreight": "Luftfracht",
+    "roadFreight": "Straßenfracht",
+    "railFreight": "Schienenfracht"
+  }
+}

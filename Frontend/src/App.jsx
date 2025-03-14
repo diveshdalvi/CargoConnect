@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 import Spline from "@splinetool/react-spline";
 import FreightCalculator from "../src/components/FreightCalculator";
 import Footer from "./components/Footer";
-import FeatureSection from "./components/FeatureSection.jsx";
+import FeatureSection from "./components/featuresection";
 function App() {
   const [weightUnit, setWeightUnit] = useState("kg");
   const [weight, setWeight] = useState("");

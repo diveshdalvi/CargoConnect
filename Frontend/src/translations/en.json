@@ -1,0 +1,65 @@
+{
+  "common": {
+    "getStarted": "Get Started",
+    "trackShipment": "Track Shipment",
+    "becauseEveryMile": "Because every mile",
+    "counts": "counts",
+    "trackYourCargo": "Track your cargo across the globe with",
+    "realTimeUpdates": "real-time updates and efficient route optimization"
+  },
+  "freightCalculator": {
+    "title": "Freight Calculator",
+    "originType": "Origin Type",
+    "selectOrigin": "Select Origin",
+    "destinationType": "Destination Type",
+    "selectDestination": "Select Destination",
+    "routeType": "Route Type",
+    "fastest": "Fastest Route",
+    "cheapest": "Cheapest Route",
+    "shortest": "Shortest Route",
+    "weight": "Weight",
+    "calculate": "Calculate",
+    "calculating": "Calculating...",
+    "error": "Error calculating route",
+    "fillAllFields": "Please fill in all required fields"
+  },
+  "features": {
+    "title": "Features",
+    "routeOptimization": {
+      "title": "Route Optimization",
+      "description": "Smart planning to reduce time and cost"
+    },
+    "multiModal": {
+      "title": "Multi-Modal Logistics",
+      "description": "Supports road, rail, air, and sea freight"
+    },
+    "carbonFootprint": {
+      "title": "Carbon Footprint Tracking",
+      "description": "Track and reduce emissions for a greener future"
+    },
+    "multilingual": {
+      "title": "Multilingual Support",
+      "description": "Seamless global experience in multiple languages"
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner in global logistics and cargo transportation",
+    "contactUs": "Contact Us",
+    "email": "contact@cargoconnect.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "123 Logistics Ave, NY 10001",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "transportTypes": {
+    "sea": "Sea",
+    "air": "Air",
+    "land": "Land",
+    "seaFreight": "Sea Freight",
+    "airFreight": "Air Freight",
+    "roadFreight": "Road Freight",
+    "railFreight": "Rail Freight"
+  }
+}
